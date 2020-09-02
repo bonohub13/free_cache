@@ -19,7 +19,9 @@ example1) Run every hour and set the trigger to 2GB (minimal is 1GB)<br/>
 
 ## ::::: Updates :::::
 - September 2, 2020
-    - Initialized <b>devel</b> branch
+    - Initialized repository
+    - Added <b>devel</b> branch
     - Added:
         - free_cache.bash
         - setup.sh
+    - Merged with devel branch

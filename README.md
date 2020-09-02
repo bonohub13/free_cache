@@ -5,15 +5,20 @@
 
 ## ::::: Documentation :::::
 ### How to use
-Add executable permission to <i>free_cache.bash</i><br/>
-Run crontab as root or with sudo<br/>
-```# crontab -e```<br/>
+- Initial run<br/>
+Give <i>setup.bash</i> execution permission<br/>
+<b>```chmod +x setup.sh```</b><br/>
+Run <i>setup.bash</i> to initialize<br/>
+<b>```$ ./setup.sh```</b><br/>
 edit crontab as the following<br/>
-```minute hour date-of-month month day-of-week . /root/free_cache.bash```<br/>
+<b>```minute hour date-of-month month day-of-week . /root/free_cache.bash```</b><br/>
 example0) Run every hour:<br/>
-```0 * * * * . /root/free_cache.bash```<br/>
+<b>```0 * * * * . /root/free_cache.bash```</b><br/>
 example1) Run every hour and set the trigger to 2GB (minimal is 1GB)<br/>
-```0 * * * * . /root/free_cache.bash 2000000000```<br/>
+<b>```0 * * * * . /root/free_cache.bash 2000000000```</b><br/>
+- Manual<br/>
+Run ```crontab -e``` with root user privileges (or with sudo)<br/>
+<b>```# crontab -e```<b><br/>
 
 - - -
 

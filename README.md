@@ -24,12 +24,11 @@ Run ```crontab -e``` with root user privileges (or with sudo)<br/>
 
 ## ::::: Updates :::::
 - September 2, 2020
-    - Initialized repository
+    - Initialized branch
     - Added <b>devel</b> branch
     - Added:
         - free_cache.bash
         - setup.sh
-    - Merged with devel branch
 - September 3, 2020
     - Fixed target to used memory size
     - Fixed target size

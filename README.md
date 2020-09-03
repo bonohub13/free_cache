@@ -15,7 +15,7 @@ edit crontab as the following<br/>
 example0) Run every hour:<br/>
 <b>```0 * * * * . /root/free_cache.bash```</b><br/>
 example1) Run every hour and set the trigger to 2GB (minimal is 1GB)<br/>
-<b>```0 * * * * . /root/free_cache.bash 2000000000```</b><br/>
+<b>```0 * * * * . /root/free_cache.bash 2000000```</b><br/>
 - Manual<br/>
 Run ```crontab -e``` with root user privileges (or with sudo)<br/>
 <b>```# crontab -e```<b><br/>
@@ -30,3 +30,6 @@ Run ```crontab -e``` with root user privileges (or with sudo)<br/>
         - free_cache.bash
         - setup.sh
     - Merged with devel branch
+- September 3, 2020
+    - Fixed target to used memory size
+    - Fixed target size
